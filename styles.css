@@ -205,6 +205,37 @@ a {
   gap: 1.5rem;
 }
 
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.expert-card {
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: grid;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.expert-body {
+  padding: 1.6rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.expert-body h3 {
+  font-size: 1.2rem;
+}
+
+.expert-roles {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
 .card {
   background: var(--card);
   padding: 1.6rem;
