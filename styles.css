@@ -451,14 +451,70 @@ a {
   .expert-meta h3 {
     font-size: 1.2rem;
   }
+
+  .hero h1 {
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 
 @media (max-width: 600px) {
+  .container {
+    width: min(1120px, 90%);
+  }
+
   .hero {
-    padding-top: 4rem;
+    padding: 3.5rem 0 3rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    white-space: normal;
+    word-break: break-word;
   }
 
   .hero-card {
     padding: 1.5rem;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .stats {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .nav-links {
+    left: 4%;
+    right: 4%;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-links {
+    padding: 0.8rem;
+  }
+
+  .expert-header {
+    grid-template-columns: 1fr;
+  }
+
+  .expert-photo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .expert-meta h3 {
+    font-size: 1.1rem;
   }
 }
